@@ -1,0 +1,9 @@
+SET_PARAMETER rtsp://localhost/wfd1.0 RTSP/1.0
+CSeq: 2
+Content-Type: text/parameters
+Content-Length: 279
+
+wfd_video_formats: 00 00 02 10 0001ffff 1fffffff 00000fff 00 0000 0000 00 none none
+wfd_presentation_URL: rtsp://192.168.1.1/wfd1.0/streamid=0 none
+wfd_uibc_capability: input_category_list=GENERIC;generic_cap_list=Mouse;hidc_cap_list=none;port=7239
+wfd_trigger_method: SETUP

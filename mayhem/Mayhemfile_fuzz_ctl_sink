@@ -1,0 +1,11 @@
+project: savantenvs/miraclecast
+target: fuzz_ctl_sink
+
+cmds:
+  - cmd: /mayhem/fuzz_ctl_sink
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_ctl_sink/testsuite

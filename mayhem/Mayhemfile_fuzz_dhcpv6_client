@@ -1,0 +1,11 @@
+project: savantenvs/miraclecast
+target: fuzz_dhcpv6_client
+
+cmds:
+  - cmd: /mayhem/fuzz_dhcpv6_client
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_dhcpv6_client/testsuite

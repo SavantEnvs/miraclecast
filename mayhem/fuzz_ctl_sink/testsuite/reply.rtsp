@@ -1,0 +1,6 @@
+RTSP/1.0 200 OK
+CSeq: 3
+Session: 6B8B4567;timeout=30
+Public: org.wfa.wfd1.0, SETUP, TEARDOWN, PLAY, PAUSE, GET_PARAMETER, SET_PARAMETER
+Transport: RTP/AVP/UDP;unicast;client_port=1028
+
